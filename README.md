@@ -4,11 +4,11 @@ With the advent of new sophisticated machine learning (ML) algorithms in the fie
 Brief Description of contents:
 1.	CNN-test-Base_case: CNN model analysis on the cleaned data set.
 2.	Non-CNN models: BMB, MNB, RF, LSVM, LR, DT model analysis along with data preparation steps.
-3.	Three different variations are:
-   •	Base Case – In this case, the observations and labels were taken as is from the data with some pre-processing and without any stop-word specific removal. (base)
-   •	Stop Word Case – In this case, a careful selection of stop words was formulated by the author which was then incorporated in the pre-processing to obtain richer observation. The labels assigned were taken as is from the raw data. (stop)
-   •	Mislabel Correction case – In this case, the cleaned observation from 2nd case was taken as the independent variable. The labels which were marked as “GO” were thoroughly examined by the author and subsequently altered if any discrepancies were found. Hence, a finer version of richer observation along with corrected labels from the author were taken together. (corrected)
-5.	Sensitivity Analysis:
-   •	number-of-filters-10-trials: Varying the number of filters in CNN model
+3.	Three different variations are:  
+   • Base Case – In this case, the observations and labels were taken as is from the data with some pre-processing and without any stop-word specific removal. (base)  
+   •	Stop Word Case – In this case, a careful selection of stop words was formulated by the author which was then incorporated in the pre-processing to obtain richer observation. The labels assigned were taken as is from the raw data. (stop)  
+   •	Mislabel Correction case – In this case, the cleaned observation from 2nd case was taken as the independent variable. The labels which were marked as “GO” were thoroughly examined by the author and subsequently altered if any discrepancies were found. Hence, a finer version of richer observation along with corrected labels from the author were taken together. (corrected)  
+5.	Sensitivity Analysis:  
+   •	number-of-filters-10-trials: Varying the number of filters in CNN model  
    •	drop-out-rate-vary-10-trials: Varying the dropout rate in CNN model
 
