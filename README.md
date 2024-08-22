@@ -1,2 +1,14 @@
 # Analysing_Safety_Reports
-The study aims to test the proposition that a high efficiency of different ML algorithms in automatically classifying the observations from the site into three categories - “Unsafe Act”, “Unsafe Condition”, and “Good Observation” can be achieved. 
+With the advent of new sophisticated machine learning (ML) algorithms in the field of language processing, the horizons of generating insights from textual data have broadened exponentially. The application of these natural language processing tools is not new in the field of construction safety. However, specific gaps yet remain in the applications pertaining to analysing the near-miss observation reports obtained directly from a construction site, which has been explored in detail in this study. This study utilizes the data obtained from a construction site containing near-miss safety observations. The study aims to test the proposition that a high efficiency of different ML algorithms in automatically classifying the observations from the site into three categories - “Unsafe Act”, “Unsafe Condition”, and “Good Observation” can be achieved. The study uses supervised machine learning approach and evaluates seven different algorithms including Convolutional Neural Network (CNN) approach using F1 scores. Error analysis is also conducted to identify the strategies to increase the prediction accuracy. It is found that Random Forest classifier has high prediction accuracy with F1 score being 0.74 initially and improved to 0.77 after refining the stop-words that are excluded in the data cleaning process. Similarly, the F-1 scores obtained through CNN approach reach as high as 0.77 in the final case after the GO labels were corrected. Further, the reasons for the wrong prediction related to data quality are identified that could help improve the efficiency of the classifiers in future studies.
+
+Brief Description of contents:
+1.	CNN-test-Base_case: CNN model analysis on the cleaned data set.
+2.	Non-CNN models: BMB, MNB, RF, LSVM, LR, DT model analysis along with data preparation steps.
+3.	Three different variations are:
+   •	Base Case – In this case, the observations and labels were taken as is from the data with some pre-processing and without any stop-word specific removal. (base)
+   •	Stop Word Case – In this case, a careful selection of stop words was formulated by the author which was then incorporated in the pre-processing to obtain richer observation. The labels assigned were taken as is from the raw data. (stop)
+   •	Mislabel Correction case – In this case, the cleaned observation from 2nd case was taken as the independent variable. The labels which were marked as “GO” were thoroughly examined by the author and subsequently altered if any discrepancies were found. Hence, a finer version of richer observation along with corrected labels from the author were taken together. (corrected)
+4.	Sensitivity Analysis:
+   •	number-of-filters-10-trials: Varying the number of filters in CNN model
+   •	drop-out-rate-vary-10-trials: Varying the dropout rate in CNN model
+
